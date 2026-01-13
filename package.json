@@ -1,0 +1,21 @@
+{
+  "name": "the-earth-calendar",
+  "version": "1.0.0",
+  "description": "The calendar for the New Terrestrial Era, year 0 = 1969, special nomenclature",
+  "main": "src/tec_date.js",
+  "type": "module",
+  "scripts": {
+    "test": "node src/tec_date.js"
+  },
+  "keywords": ["calendar", "time", "symbolic", "opensource", "epoch", "moon", "earth", "space"],
+  "author": "Danilo D'Antonio, Laboratorio Eudemonia - earthcal@hyperlinker.org",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hl-eulab/tec.git"
+  },
+  "homepage": "https://earthcal.hyperlinker.org",
+  "bugs": {
+    "url": "https://github.com/hl-eulab/tec/issues"
+  }
+}
