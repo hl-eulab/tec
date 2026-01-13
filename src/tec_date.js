@@ -2,26 +2,18 @@
 // Free to use: keep the original standard and credit the Author
 // Full license at https://earthcal.hyperlinker.org
 
-const today = new Date();
+today = new Date
 
-const off = today.getFullYear() - 1969;                 // offset years
-const yos = off % 7;                                    // year-of-septennium index
+var oey = today.getFullYear()
+var ney = oey-1969
+var yos = ney%7
 
-const noy = ["of the Moon", "of the Atom", "of the Water", "of the Wind",
-             "of the Fire", "of the Earth", "of the Sun"];
-const moy = ["First month", "Second month", "Third month", "Fourth month",
-             "Fifth month", "Sixth month", "Seventh month", "Eighth month",
-             "Ninth month", "Tenth month", "Eleventh month", "Twelfth month"];
-const dow = ["Sunday", "Moonday", "Atomday", "Waterday",
-             "Winday", "Fireday", "Earthday"];
+noy = new Array("of the Moon", "of the Atom", "of the Water", "of the Wind", "of the Fire", "of the Earth", "of the Sun")
 
-// classic browser output (backward compatible)
-document.write(
-  "Today is " + dow[today.getDay()] + " " + today.getDate() +
-  ", " + moy[today.getMonth()] + ", year " + off + ", " + noy[yos]
-);
+moy = new Array("first month", "econd month", "third month", "fourth month", "fifth month", "sixth month", "seventh month", "eighth month", "ninth month", "tenth month", "eleventh month", "twelfth month")
 
-// export for Node / bundler
-if (typeof module !== "undefined") module.exports = { off, yos, noy, moy, dow };
+dow = new Array("Sunday", "Moonday", "Atomday", "Waterday", "Winday", "Fireday", "Earthday")
+
+document.write("Today is " + dow[today.getDay()] + " " + today.getDate() + ", " + moy[today.getMonth()] + ", year " + ney + ", " + noy[yos] + "")
 
 // end
